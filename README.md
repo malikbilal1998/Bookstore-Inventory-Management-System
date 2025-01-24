@@ -97,10 +97,10 @@ FROM Books b
 JOIN Categories c ON b.CategoryID = c.CategoryID
 WHERE c.Name = 'Category Name';
 
-Summarize sales for a specific date:
+
 ```
 
-
+Summarize sales for a specific date:
 
 ```bash
 SELECT
@@ -113,9 +113,9 @@ JOIN OrderDetails od ON o.OrderID = od.OrderID
 JOIN Books b ON od.BookID = b.BookID
 WHERE o.OrderDate = 'YYYY-MM-DD';
 
-Calculate total revenue:
-```
 
+```
+Calculate total revenue:
 
 
 ```bash
@@ -161,11 +161,4 @@ Designed for a single-location bookstore.
 No real-time updates for stock changes.
 
 Basic reports only; advanced analytics require external tools.
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
 
